@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #161B22;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookWorm.controller.UserChangePwdFormController">
+   <children>
+      <ImageView fitHeight="661.0" fitWidth="551.0" layoutX="36.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Login_Right.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="149.0" layoutY="357.0" prefHeight="50.0" prefWidth="302.0" promptText="Change Your User Name" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtPassword" alignment="CENTER" layoutX="149.0" layoutY="443.0" prefHeight="50.0" prefWidth="302.0" promptText="Change Your Password" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtConfirmPwd" alignment="CENTER" layoutX="149.0" layoutY="524.0" prefHeight="50.0" prefWidth="302.0" promptText="Confirm Password" style="-fx-background-radius: 20;" />
+      <JFXButton layoutX="149.0" layoutY="650.0" onAction="#ChangeOnAction" prefHeight="50.0" prefWidth="302.0" style="-fx-background-color: #85f55d; -fx-background-radius: 20;" text="CHANGE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="90.0" layoutY="79.0" text="USER CHANGE CREDENTIALS" textFill="#85f55d">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsrId" layoutX="149.0" layoutY="278.0" prefHeight="50.0" prefWidth="302.0" style="-fx-background-radius: 20;" text="Label" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/icons8-account-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLeftBack" buttonType="RAISED" contentDisplay="TOP" layoutX="54.0" layoutY="144.0" onAction="#btnBackOnAction" prefHeight="92.0" prefWidth="76.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="81.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/arrow-circle-left.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
